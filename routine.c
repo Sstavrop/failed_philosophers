@@ -6,7 +6,7 @@
 /*   By: sstavrop <sstavrop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 10:46:12 by magensium         #+#    #+#             */
-/*   Updated: 2025/05/30 15:23:29 by sstavrop         ###   ########.fr       */
+/*   Updated: 2025/05/30 15:51:14 by sstavrop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	routine_sleep(t_philo *ph)
 void	routine_think(t_philo *ph)
 {
 	print_action(ph, THINK);
-	if(!is_simulation_over(ph->data))
+	if (!is_simulation_over(ph->data))
 		ft_usleep(1, ph->data);
 }
 
