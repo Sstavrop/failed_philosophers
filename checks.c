@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checks.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magnesium <magnesium@student.42.fr>        +#+  +:+       +#+        */
+/*   By: sstavrop <sstavrop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 10:41:41 by magensium         #+#    #+#             */
-/*   Updated: 2025/05/11 12:50:09 by magnesium        ###   ########.fr       */
+/*   Updated: 2025/05/30 15:24:27 by sstavrop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	monitor_philos(t_data *dt)
 		}
 		if (is_simulation_over(dt))
 			return ;
-		usleep(1000);
+		usleep(100);
 	}
 }
 
