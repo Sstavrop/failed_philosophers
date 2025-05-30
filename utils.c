@@ -6,7 +6,7 @@
 /*   By: sstavrop <sstavrop@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 10:47:04 by magensium         #+#    #+#             */
-/*   Updated: 2025/05/30 15:24:41 by sstavrop         ###   ########.fr       */
+/*   Updated: 2025/05/30 16:34:52 by sstavrop         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,9 @@ int	ft_usleep(long int milliseconds, t_data *data)
 			break ;
 		time_to_wait = (milliseconds - time_elapsed);
 		if (time_to_wait > 5)
-			usleep(500);
-		else if (time_to_wait > 0)
-			usleep(time_to_wait * 1000);
+			usleep(1000);
 		else
-			usleep(100);
+			usleep(500);
 	}
 	return (1);
 }
